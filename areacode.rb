@@ -5,7 +5,7 @@ def get_city_names(somehash)
 end
 
 def get_area_code(somehash,key)
-  puts(somehash[key])
+  puts"The area code for #{key} is #{somehash[key]}"
 end
 
 loop do
