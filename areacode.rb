@@ -15,5 +15,10 @@ loop do
   get_city_names(area_codes)
   puts"enter your selection"  
   city=gets.chomp.downcase
-  get_area_code(area_codes,city)
+  if area_codes.include?(city)
+    puts"Okay,Thanks for the selection"
+    get_area_code(area_codes,city)
+  else
+    puts"you entered wrong city name"
+  end
 end
